@@ -13,8 +13,8 @@ body {
 .logoUFPS img {
   width: 100%;
   position: absolute;
-  top: 20em;
-  left: 14em;
+  top: 23em;
+  left: 11em;
 }
 .iniciarsession{
   width: 20vw;
@@ -29,7 +29,20 @@ body {
 .fbr{
   border-radius: 20px;
 }
+.brlogin{
+  border-radius: 50px !important;
+}
 .cuerpologin{
   width: 100vw !important;
   height: 100vh !important;
+}
+.prlogin{
+  position: relative;
+  top: -8em;
+}
+.plogin{
+  padding: 4em;
+}
+.gbcolor{
+  background-color: rgba(242, 242, 242, 0.50);
 }
