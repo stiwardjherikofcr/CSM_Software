@@ -301,26 +301,149 @@
 						</ul>
 					</div>
 					<div class="row">
-						<!--contenido de los grupos-->
+
+						<!-- Tabla Grupos-->
 						<div class="col-md-8">
-							<div class="card" id="Microcurriculo">
-								<div class="card-header d-flex justify-content-center">
-									<h2 class="card-title mtittle "> Grupos</h2>
+							<div class="card">
+								<div class="card-header text-center">
+									<h2 class="card-title"> Grupos</h2>
 								</div>
-								<div class="card-body pb-0 ">
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="basic-datatables"
+											class="display table table-striped table-hover text-center">
+											<thead>
+												<tr>
+													<th>Código Materia</th>
+													<th>Nombre Materia</th>
+													<th>Código Docente</th>
+													<th>Nombre Docente</th>
+													<th>Grupo</th>
+													<th>Acción</th>
+												</tr>
+											</thead>
+											<tfoot>
+												<tr>
+													<th>Código Materia</th>
+													<th>Nombre Materia</th>
+													<th>Código Docente</th>
+													<th>Nombre Docente</th>
+													<th>Grupo</th>
+													<th>Acción</th>
+												</tr>
+											</tfoot>
+											<tbody>
+												<tr>
+													<td>1155704</td>
+													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
+													<td>1151201</td>
+													<td>Salamanca Landinez Alvaro</td>
+													<td>A</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>1155705</td>
+													<td>ANALISIS Y DISEÑO DE SISTEMAS</td>
+													<td>1151202</td>
+													<td>Pardo Garcia Carlos Eduardo</td>
+													<td>A</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>1155706</td>
+													<td>SEMINARIO DE INVESTIGACION III</td>
+													<td>1151203</td>
+													<td>Vera Rivera Fredy Humberto</td>
+													<td>A</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
-						<!--fin contenido de los grupos-->
+						<!-- Find Tabla Grupos -->
 
 						<!--Crear Grupos-->
-						<div class="col-md-4 ">
+						<div class="col-md-4">
 							<div class="">
-								<div class="card" id="Microcurriculo">
+								<div class="card">
 									<div class="card-header d-flex justify-content-center">
-										<h2 class="card-title mtittle "> Crear Grupos</h2>
+										<h2 class="card-title mtittle"> Crear Grupos</h2>
 									</div>
 									<div class="card-body pb-0 ">
+										<form>
+											<div class="form-group">
+												<label for="exampleFormControlSelect1">Materia</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>Seminario de Investigación ll</option>
+													<option>Análisis y Diseño</option>
+													<option>Administración de proyectos informaticos</option>
+													<option>Inteligencia Artificial</option>
+													<option>Seminario de Investigación lll</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleFormControlSelect1">Docente</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>Alvaro Salamanca Landinez</option>
+													<option>Judith del Pilar Rodrigez Tenjo</option>
+													<option>Maria del Pilar Rojas Puentes</option>
+													<option>Eduard Gilberto Puerto Cuadros</option>
+													<option>Alvaro Salamanca Landinez</option>
+												</select>
+											</div>
+											<div class="form-group">
+												<label for="exampleFormControlSelect1">Grupo</label>
+												<select class="form-control" id="exampleFormControlSelect1">
+													<option>A</option>
+													<option>B</option>
+													<option>C</option>
+													<option>D</option>
+													<option>E</option>
+												</select>
+											</div>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -366,13 +489,23 @@
 	<!-- jQuery UI -->
 	<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-
 	<!-- jQuery Scrollbar -->
 	<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Datatables -->
+	<script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
 	<!-- Atlantis JS -->
 	<script src="../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="../../assets/js/setting-demo2.js"></script>
+	<!-- Filtros Tablas JS -->
+	<script>
+		$(document).ready(function () {
+			// Basic
+			$('#basic-datatables').DataTable({
+				"pageLength": 5,
+			});
+		});
+	</script>
 </body>
 
 </html>
