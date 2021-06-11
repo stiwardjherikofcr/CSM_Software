@@ -291,7 +291,7 @@
 									</li>
 									<li>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="#">My Profile</a>
+										<a class="dropdown-item" href="../perfil/profile.html">My Profile</a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="#">Account Setting</a>
 										<div class="dropdown-divider"></div>
@@ -327,7 +327,7 @@
 							<div class="collapse in" id="collapseExample">
 								<ul class="nav">
 									<li>
-										<a href="#profile">
+										<a href="../perfil/profile.html">
 											<span class="link-collapse">My Profile</span>
 										</a>
 									</li>
@@ -648,19 +648,21 @@
 						<!-- Navegacion Unidades -->
 						<div class="col-md-2 position-relative d-flex justify-content-center">
 							<div class=" position-fixed ">
-								<div class="">
-									<div class="card" id="Microcurriculo">
+								<div>
+									<div class="card">
 										<div class="card-header d-flex justify-content-center">
 											<h2 class="card-title mt17 font-weight-bold">Cumplimiento</h2>
 										</div>
-										<div class="card-body pb-0 d-flex justify-content-center">
-											<div id="donut_single" style="width: 200px; height: 200px;"></div>
+										<div class="card-body d-flex justify-content-center">
+											<div class="px-2 pb-2 pb-md-0 text-center">
+												<div id="circles-1"></div>
+											</div>
 										</div>
 									</div>
 								</div>
 								<h2 class="d-flex justify-content-center font-weight-bold">Unidades</h2>
 								<a href="#Unidad-1">
-									<div class="card btn btn-light w-100 mb-2 p-2 d-flex justify-content-center">
+									<div class="card btn btn-light mb-2 p-2 d-flex justify-content-center">
 										<h4 class="card-title ">Unidad 1</h4>
 									</div>
 								</a>
@@ -728,6 +730,8 @@
 	<script src="../../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 	<!-- jQuery Scrollbar -->
 	<script src="../../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Chart Circle -->
+	<script src="../../../assets/js/plugin/chart-circle/circles.min.js"></script>
 	<!-- Atlantis JS -->
 	<script src="../../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
@@ -760,31 +764,21 @@
 			});
 		});
 	</script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script type="text/javascript">
-		google.charts.load('current', {
-			'packages': ['corechart']
+	<script>
+		Circles.create({
+			id: 'circles-1',
+			radius: 45,
+			value: 80,
+			maxValue: 100,
+			width: 7,
+			text: "80%",
+			colors: ['#f1f1f1', '#AA1916'],
+			duration: 400,
+			wrpClass: 'circles-wrp',
+			textClass: 'circles-text',
+			styleWrapper: true,
+			styleText: true
 		});
-		google.charts.setOnLoadCallback(drawChart);
-
-		function drawChart() {
-			var data = google.visualization.arrayToDataTable([
-				['Effort', 'Amount given'],
-				['Visto', 50],
-				['Falta', 50]
-			]);
-
-			var options = {
-				pieHole: 0.5,
-				pieSliceTextStyle: {
-					color: 'black',
-				},
-				legend: 'none'
-			};
-
-			var chart = new google.visualization.PieChart(document.getElementById('donut_single'));
-			chart.draw(data, options);
-		}
 	</script>
 </body>
 
