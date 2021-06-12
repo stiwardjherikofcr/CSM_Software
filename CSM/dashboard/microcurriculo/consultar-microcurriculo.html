@@ -285,27 +285,196 @@
 				<div class="page-inner">
 					<div class="page-header">
 						<h4 class="page-title">Microcurriculo</h4>
-						<ul class="breadcrumbs">
-							<li class="nav-home">
-								<a href="../dashboard.html">
-									<i class="flaticon-home"></i>
-								</a>
-							</li>
-							<li class="separator">
-								<i class="flaticon-right-arrow"></i>
-							</li>
-							<li class="nav-item">
-								<a href="#">Microcurriculo</a>
-							</li>
-							<li class="separator">
-								<i class="flaticon-right-arrow"></i>
-							</li>
-							<li class="nav-item">
-								<a href="#">Consultar</a>
-							</li>
-						</ul>
+						<div class="ml-md-auto">
+							<ul class="breadcrumbs">
+								<li class="nav-home">
+									<a href="../dashboard.html">
+										<i class="flaticon-home"></i>
+									</a>
+								</li>
+								<li class="separator">
+									<i class="flaticon-right-arrow"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#">Microcurriculo</a>
+								</li>
+								<li class="separator">
+									<i class="flaticon-right-arrow"></i>
+								</li>
+								<li class="nav-item">
+									<a href="#">Consultar</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="page-category">Aqui va la Informacion</div>
+					<div class="row">
+						<!-- Tabla Consultar Microcurriculos -->
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header text-center">
+									<h4 class="card-title">Listado Microcurriculos</h4>
+								</div>
+								<div class="card-body">
+									<div class="table-responsive">
+										<table id="basic-datatables"
+											class="display table table-striped table-hover text-center">
+											<thead>
+												<tr>
+													<th>Pensum</th>
+													<th>Código Materia</th>
+													<th>Nombre Materia</th>
+													<th>Créditos</th>
+													<th>Semestre</th>
+													<th>Action</th>
+												</tr>
+											</thead>
+											<tfoot>
+												<tr>
+													<th>Pensum</th>
+													<th>Código Materia</th>
+													<th>Nombre Materia</th>
+													<th>Créditos</th>
+													<th>Semestre</th>
+													<th>Action</th>
+												</tr>
+											</tfoot>
+											<tbody>
+												<tr>
+													<td>115-3</td>
+													<td>1155704</td>
+													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
+													<td>3</td>
+													<td>7</td>
+													<td>
+														<div class="form-button-action">
+															<a href="ver-microcurriculo.html">
+																<button id="pensum" type="button" data-toggle="tooltip"
+																	title="" class="btn btn-link btn-dark"
+																	data-original-title="See" style="color: black;">
+																	<i class="fas fa-search"></i>
+																</button>
+															</a>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>115-3</td>
+													<td>1155705</td>
+													<td>ANALISIS Y DISEÑO DE SISTEMAS</td>
+													<td>4</td>
+													<td>7</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>115-3</td>
+													<td>1155706</td>
+													<td>SEMINARIO DE INVESTIGACION III</td>
+													<td>2</td>
+													<td>7</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>115-3</td>
+													<td>1155708</td>
+													<td>ADMINISTRACION DE PROYECTOS INFORMATICOS</td>
+													<td>3</td>
+													<td>7</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>115-3</td>
+													<td>1155704</td>
+													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
+													<td>3</td>
+													<td>6</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>115-3</td>
+													<td>1155704</td>
+													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
+													<td>3</td>
+													<td>7</td>
+													<td>
+														<div class="form-button-action">
+															<button id="pensum" type="button" data-toggle="tooltip"
+																title="" class="btn btn-link btn-dark"
+																data-original-title="See" style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Fin Tabla Consultar Microcurriculos -->
+					</div>
 				</div>
 			</div>
 			<footer class="footer">
@@ -344,9 +513,10 @@
 	<!-- jQuery UI -->
 	<script src="../../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="../../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
-
 	<!-- jQuery Scrollbar -->
 	<script src="../../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Datatables -->
+	<script src="../../../assets/js/plugin/datatables/datatables.min.js"></script>
 	<!-- Atlantis JS -->
 	<script src="../../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
@@ -377,6 +547,12 @@
 				},
 				time: 1000,
 			});
+		});
+	</script>
+	<script>
+		// Basic
+		$('#basic-datatables').DataTable({
+			"pageLength": 5,
 		});
 	</script>
 </body>
