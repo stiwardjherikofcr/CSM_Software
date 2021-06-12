@@ -316,9 +316,8 @@
 									<div class="card-title">Porcentaje de Cumplimiento</div>
 								</div>
 								<div class="card-body">
-									<div class="chart-container">
-										<canvas id="barChart"></canvas>
-									</div>
+									<div class="d-flex justify-content-center align-items-center"
+										id="columnchart_values"></div>
 								</div>
 							</div>
 						</div>
@@ -459,7 +458,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 			<footer class="footer">
 				<div class="container-fluid">
 					<nav class="pull-left">
@@ -497,7 +496,7 @@
 	<script src="../../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="../../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 	<!-- Chart JS -->
-	<script src="../../../assets/js/plugin/chart.js/chart.min.js"></script>
+	<script src="https://www.gstatic.com/charts/loader.js"></script>
 	<!-- jQuery Scrollbar -->
 	<script src="../../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 	<!-- Datatables -->
@@ -506,33 +505,90 @@
 	<script src="../../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="../../../assets/js/setting-demo2.js"></script>
-	<!-- chart -->
-	<script>
-		var barChart = document.getElementById('barChart').getContext('2d');
-
-		var myBarChart = new Chart(barChart, {
-			type: 'bar',
-			data: {
-				labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-				datasets: [{
-					label: "Sales",
-					backgroundColor: 'rgb(23, 125, 255)',
-					borderColor: 'rgb(23, 125, 255)',
-					data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
-				}],
-			},
-			options: {
-				responsive: true,
-				maintainAspectRatio: false,
-				scales: {
-					yAxes: [{
-						ticks: {
-							beginAtZero: true
-						}
-					}]
-				},
-			}
+	<!-- Chart -->
+	<script type="text/javascript">
+		google.charts.load("current", {
+			packages: ['corechart']
 		});
+		google.charts.setOnLoadCallback(drawChart);
+
+		function drawChart() {
+			var data = google.visualization.arrayToDataTable([
+				["Materia", "Porcentaje", {
+					role: "style"
+				}],
+				["Calculo Diferencial", 50, "#a81f2b"],
+				["Matematicas Discretas", 10, "#a81f2b"],
+				["Fundamentos de Programacion", 25, "#a81f2b"],
+				["Introduccion Ing. Sistemas", 30, "#a81f2b"],
+				["Comunicacion I", 50, "#a81f2b"],
+				["Intro Vida Universitaria", 25, "#a81f2b"],
+				["Calculo Integral", 89, "#a81f2b"],
+				["Algebra Lineal", 100, "#a81f2b"],
+				["Fisica Mecanica", 19, "#a81f2b"],
+				["Programacion Orientada a Objectos", 30, "#a81f2b"],
+				["Comunicacion II", 75, "#a81f2b"],
+				["Seminario Integrador I", 50, "#a81f2b"],
+				["Calculo Vectorial", 50, "#a81f2b"],
+				["Fisica Electromagnetica", 27, "#a81f2b"],
+				["Estructuras de Datos", 50, "#a81f2b"],
+				["Programacion Orientada a Objectos II", 10, "#a81f2b"],
+				["Seminario de Investigacion I", 25, "#a81f2b"],
+				["Ecuaciones Diferenciales", 30, "#a81f2b"],
+				["Probabilidad y Estadistica", 50, "#a81f2b"],
+				["Ondas y Particulas", 25, "#a81f2b"],
+				["Analisis de Algoritmos", 89, "#a81f2b"],
+				["Teoria de la Computación", 100, "#a81f2b"],
+				["Analisis Numerico", 19, "#a81f2b"],
+				["Investigacion de Operaciones", 30, "#a81f2b"],
+				["Electronica", 75, "#a81f2b"],
+				["Arquitectura de Computadores", 50, "#a81f2b"],
+				["Seminario de Investigacion II", 50, "#a81f2b"],
+				["Sistemas Operativos", 27, "#a81f2b"],
+				["Bases de Datos", 50, "#a81f2b"],
+				["Programacion Web", 10, "#a81f2b"],
+				["Constitucion y Civismo", 25, "#a81f2b"],
+				["Planeacion Estrategica de Sistemas Informacion", 30, "#a81f2b"],
+				["Teoria General de las Comunicaciones", 50, "#a81f2b"],
+				["Analisis y Diseño de Sistemas", 25, "#a81f2b"],
+				["Seminario de Investigacion III", 89, "#a81f2b"],
+				["Etica Profesional", 100, "#a81f2b"],
+				["Administracion de Proyectos Informaticos", 19, "#a81f2b"],
+				["Programacion Orientada a Objectos", 30, "#a81f2b"],
+				["Redes de Computadores", 75, "#a81f2b"],
+				["Ingenieria de Software", 50, "#a81f2b"],
+				["Formulacion y Evaluacion de Proyectos de Sistemas", 50, "#a81f2b"],
+				["Seminario Integrador III", 27, "#a81f2b"],
+				["Arquitectura de Software", 37, "#a81f2b"],
+				["Gestion de Tics", 77, "#a81f2b"],
+				["Practica en Ing. Sistemas", 87, "#a81f2b"]
+			]);
+
+
+			var view = new google.visualization.DataView(data);
+			view.setColumns([0, 1,
+				{
+					calc: "stringify",
+					sourceColumn: 1,
+					type: "string",
+					role: "annotation"
+				},
+				2
+			]);
+
+			var options = {
+				width: 1500,
+				height: 500,
+				bar: {
+					groupWidth: "50%"
+				},
+				legend: {
+					position: "none"
+				},
+			};
+			var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+			chart.draw(view, options);
+		}
 	</script>
 	<!-- Filtros Tablas JS -->
 	<script>
@@ -543,8 +599,6 @@
 			});
 		});
 	</script>
-
-
 </body>
 
 </html>
