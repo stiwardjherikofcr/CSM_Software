@@ -5734,7 +5734,7 @@ label {
 }
 
 .card-primary {
-  background: #f23545 !important;
+  background: #a81f2b !important;
 }
 
 .card-secondary {
@@ -5742,7 +5742,7 @@ label {
 }
 
 .card-info {
-  background: #48abf7 !important;
+  background: #3498DB !important;
 }
 
 .card-success {
@@ -5750,11 +5750,11 @@ label {
 }
 
 .card-warning {
-  background: #ffad46 !important;
+  background: #F2A341 !important;
 }
 
 .card-danger {
-  background: #a81f2b !important;
+  background: #F23545 !important;
 }
 
 .card-round {

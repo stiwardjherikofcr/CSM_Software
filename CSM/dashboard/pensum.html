@@ -306,21 +306,6 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-6 ml-auto">
-							<div class="card">
-								<div class="card-header">
-									<div class="d-flex justify-content-center">
-										<h4 class="card-title ">Cargar Pensum</h4>
-									</div>
-								</div>
-								<div class="card-body pb-0">
-									<div class="form-group">
-										<label for="exampleFormControlFile1">Seleccionar Archivo</label>
-										<input type="file" class="form-control-file" id="exampleFormControlFile1">
-									</div>
-								</div>
-							</div>
-						</div>
 						
 						<!-- Pensum Actual-->
 						<div class="col-md-12">
@@ -342,9 +327,17 @@
 						<!-- Pensum -->
 						<div class="col-md-12">
 							<div class="card">
-								<div class="card-header text-center">
-									<h4 class="card-title">Listado Pensum</h4>
+								<div class="card-header row">
+								<div class="col d-flex justify-content-center align-items-center">
+								<h4 class="card-title  ">Listado Pensum</h4>
 								</div>
+								
+									<div class="col-3 form-group ">
+										<label for="exampleFormControlFile1">Cargar Pensum</label>
+										<input type="file" class="form-control-file" id="exampleFormControlFile1">
+									</div>
+								
+								</div>								
 								<div class="card-body">
 									<div class="table-responsive">
 										<table id="basic-datatables"
