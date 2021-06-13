@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../../assets/css/singin.css">
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../assets/css/checkradio.css">
 
     <link rel="stylesheet" href="../../../assets/css/microcurriculo.css">
     <!-- CSS Just for demo purpose, don't include it in your project -->
@@ -45,25 +46,22 @@
                         </div>
                         <div class="mb-3 form-check d-flex justify-content-around">
                             <div>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Dir. Programa
-                                </label>
-                            </div>
-                            <div>
-                                <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                    id="flexRadioDefault2">
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                    Docente
-                                </label>
+                                <label for="opt1" class="radio">
+                                    <input type="radio" name="rdo" id="opt1" class="hidden"/>
+                                    <span class="label"></span>Director de Programa
+                                  </label>
+                                  
+                                  <label for="opt2" class="radio">
+                                    <input type="radio" name="rdo" id="opt2" class="hidden"/>
+                                    <span class="label"></span>docente
+                                  </label>
                             </div>
                         </div>
                         <div class="w-100 d-flex justify-content-center ">
-                            <a class="btn btn-primary mb-2 w-100 brlogin" href="javascript:href()">Iniciar Sesion</a>
+                            <a class="btn btn-danger mb-2 w-100 brlogin" href="javascript:href()">Iniciar Sesion</a>
                         </div>
                         <div class="w-100 d-flex justify-content-center ">
-                            <a class="btn btn-primary mb-2 w-100 brlogin" href="../sign-up/signup.html">Registrarse</a>
+                            <a class="btn btn-danger mb-2 w-100 brlogin" href="../sign-up/signup.html">Registrarse</a>
                         </div>
                     </div>
                 </form>
@@ -85,8 +83,8 @@
     <script src="../../../assets/js/setting-demo2.js"></script>
     <script>
         function href() {
-            var input_radio_director = document.getElementById("flexRadioDefault1").checked;
-            var input_radio_docente = document.getElementById("flexRadioDefault2").checked;
+            var input_radio_director = document.getElementById("opt1").checked;
+            var input_radio_docente = document.getElementById("opt2").checked;
             if (input_radio_director) {
                 window.location = "../director/dashboard/dashboard.html";
             } else if (input_radio_docente) {
