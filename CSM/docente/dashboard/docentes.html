@@ -5,10 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>CSM Software</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../../assets/img/icon.ico" type="image/x-icon" />
+	<link rel="icon" href="../../../assets/img/icon.ico" type="image/x-icon" />
 
 	<!-- Fonts and icons -->
-	<script src="../../assets/js/plugin/webfont/webfont.min.js"></script>
+	<script src="../../../assets/js/plugin/webfont/webfont.min.js"></script>
 	<script>
 		WebFont.load({
 			google: {
@@ -18,7 +18,7 @@
 				"families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands",
 					"simple-line-icons"
 				],
-				urls: ['../../assets/css/fonts.min.css']
+				urls: ['../../../assets/css/fonts.min.css']
 			},
 			active: function () {
 				sessionStorage.fonts = true;
@@ -27,10 +27,12 @@
 	</script>
 
 	<!-- CSS Files -->
-	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../assets/css/atlantis.min.css">
+	<link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../assets/css/atlantis.min.css">
 	<!-- CSS Just for demo purpose, don't include it in your project -->
-	<link rel="stylesheet" href="../../assets/css/demo.css">
+	<link rel="stylesheet" href="../../../assets/css/demo.css">
+	<!-- switch-button CSS  -->
+	<link rel="stylesheet" href="../../../assets/css/switch-button.css">
 </head>
 
 <body>
@@ -60,7 +62,7 @@
 			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="red">
 				<div class="container-fluid ">
 					<div class="d-inline-flex">
-						<div class="avatar"><img src="../../assets/img/logo_ingsistemas.png"
+						<div class="avatar"><img src="../../../assets/img/logo_ingsistemas.png"
 								alt="logotipo de ing Sistemas" class="avatar-img rounded"></div>
 						<h1 class=" ml-3 text-white d-flex align-items-center">Ingeniería de Sistemas</h1>
 					</div>
@@ -100,7 +102,7 @@
 											</a>
 											<a href="#">
 												<div class="notif-img">
-													<img src="../../assets/img/profile2.jpg" alt="Img Profile">
+													<img src="../../../assets/img/profile2.jpg" alt="Img Profile">
 												</div>
 												<div class="notif-content">
 													<span class="block">
@@ -131,7 +133,7 @@
 							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"
 								aria-expanded="false">
 								<div class="avatar-sm">
-									<img src="../../assets/img/profile.jfif" alt="..."
+									<img src="../../../assets/img/profile.jfif" alt="..."
 										class="avatar-img rounded-circle">
 								</div>
 							</a>
@@ -140,7 +142,7 @@
 									<li>
 										<div class="user-box">
 											<div class="avatar-lg">
-												<img src="../../assets/img/profile.jfif" alt="image profile"
+												<img src="../../../assets/img/profile.jfif" alt="image profile"
 													class="avatar-img rounded">
 											</div>
 											<div class="u-text">
@@ -165,7 +167,6 @@
 			</nav>
 			<!-- End Navbar -->
 		</div>
-
 		<!-- Sidebar -->
 		<div class="sidebar sidebar-style-2">
 			<div class="sidebar-wrapper scrollbar scrollbar-inner">
@@ -173,7 +174,7 @@
 					<div>
 						<div class="user">
 							<div class="avatar-sm float-left mr-2">
-								<img src="../../assets/img/profile.jfif" alt="..." class="avatar-img rounded-circle">
+								<img src="../../../assets/img/profile.jfif" alt="..." class="avatar-img rounded-circle">
 							</div>
 							<div class="info">
 								<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -256,13 +257,13 @@
 									<p>Seguimiento</p>
 								</a>
 							</li>
-							<li class="nav-item active">
+							<li class="nav-item">
 								<a href="grupos.html">
 									<i class="fas fa-table"></i>
 									<p>Grupos</p>
 								</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item active">
 								<a href="docentes.html">
 									<i class="fas fa-user-friends"></i>
 									<p>Docentes</p>
@@ -270,21 +271,23 @@
 							</li>
 							<li class="mx-4 mt-2">
 								<a href="#" class="">
-									<img src="../../assets/img/Logo-vertical.jpg" alt="..." class="avatar-img">
+									<img src="../../../assets/img/Logo-vertical.jpg" alt="..." class="avatar-img">
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
+
 		</div>
 		<!-- End Sidebar -->
+
 
 		<div class="main-panel">
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
-						<h4 class="page-title">Grupos</h4>
+						<h4 class="page-title">Docentes</h4>
 						<div class="ml-md-auto">
 							<ul class="breadcrumbs">
 								<li class="nav-home">
@@ -296,17 +299,17 @@
 									<i class="flaticon-right-arrow"></i>
 								</li>
 								<li class="nav-item">
-									<a href="#">Grupos</a>
+									<a href="#">Docentes</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
-						<!-- Tabla Grupos-->
-						<div class="col-md-8">
+						<!-- Tabla Docentes -->
+						<div class="col-md-12">
 							<div class="card">
 								<div class="card-header text-center">
-									<h2 class="card-title"> Grupos</h2>
+									<h4 class="card-title">Listado Docentes</h4>
 								</div>
 								<div class="card-body">
 									<div class="table-responsive">
@@ -314,85 +317,111 @@
 											class="display table table-striped table-hover text-center">
 											<thead>
 												<tr>
-													<th>Código Materia</th>
-													<th>Nombre Materia</th>
 													<th>Código Docente</th>
 													<th>Nombre Docente</th>
-													<th>Grupo</th>
-													<th>Acción</th>
+													<th>Estado</th>
+													<th>Action</th>
 												</tr>
 											</thead>
 											<tfoot>
 												<tr>
-													<th>Código Materia</th>
-													<th>Nombre Materia</th>
 													<th>Código Docente</th>
 													<th>Nombre Docente</th>
-													<th>Grupo</th>
-													<th>Acción</th>
+													<th>Estado</th>
+													<th>Action</th>
 												</tr>
 											</tfoot>
 											<tbody>
 												<tr>
-													<td>1155704</td>
-													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
 													<td>1151201</td>
 													<td>Salamanca Landinez Alvaro</td>
-													<td>A</td>
+													<td>Inactivo</td>
 													<td>
-														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
-																<i class="fas fa-search"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title=""
-																class="btn btn-link btn-primary btn-lg"
-																data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-1"
+																id="switch-label-1" class="switch-button__checkbox"
+																checked>
+															<!-- Botón -->
+															<label for="switch-label-1"
+																class="switch-button__label"></label>
 														</div>
 													</td>
 												</tr>
 												<tr>
-													<td>1155705</td>
-													<td>ANALISIS Y DISEÑO DE SISTEMAS</td>
 													<td>1151202</td>
 													<td>Pardo Garcia Carlos Eduardo</td>
-													<td>A</td>
+													<td>Inactivo</td>
 													<td>
-														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
-																<i class="fas fa-search"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title=""
-																class="btn btn-link btn-primary btn-lg"
-																data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-2"
+																id="switch-label-2" class="switch-button__checkbox">
+															<!-- Botón -->
+															<label for="switch-label-2"
+																class="switch-button__label"></label>
 														</div>
 													</td>
 												</tr>
 												<tr>
-													<td>1155706</td>
-													<td>SEMINARIO DE INVESTIGACION III</td>
 													<td>1151203</td>
 													<td>Vera Rivera Fredy Humberto</td>
-													<td>A</td>
+													<td>Inactivo</td>
 													<td>
-														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
-																<i class="fas fa-search"></i>
-															</button>
-															<button type="button" data-toggle="tooltip" title=""
-																class="btn btn-link btn-primary btn-lg"
-																data-original-title="Edit Task">
-																<i class="fa fa-edit"></i>
-															</button>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-3"
+																id="switch-label-3" class="switch-button__checkbox"
+																checked>
+															<!-- Botón -->
+															<label for="switch-label-3"
+																class="switch-button__label"></label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>1155708</td>
+													<td>Judith del Pilar Rodrigez Tenjo</td>
+													<td>Inactivo</td>
+													<td>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-4"
+																id="switch-label-4" class="switch-button__checkbox">
+															<!-- Botón -->
+															<label for="switch-label-4"
+																class="switch-button__label"></label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>1155704</td>
+													<td>Maria del Pilar Rojas Puentes</td>
+													<td>Inactivo</td>
+													<td>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-5"
+																id="switch-label-5" class="switch-button__checkbox">
+															<!-- Botón -->
+															<label for="switch-label-5"
+																class="switch-button__label"></label>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>1155704</td>
+													<td>Eduard Gilberto Puerto Cuadros</td>
+													<td>Activo</td>
+													<td>
+														<div class="switch-button">
+															<!-- Checkbox -->
+															<input type="checkbox" name="switch-button-6"
+																id="switch-label-6" class="switch-button__checkbox"
+																checked>
+															<!-- Botón -->
+															<label for="switch-label-6"
+																class="switch-button__label"></label>
 														</div>
 													</td>
 												</tr>
@@ -402,60 +431,10 @@
 								</div>
 							</div>
 						</div>
-						<!-- Find Tabla Grupos -->
-
-						<!--Crear Grupos-->
-						<div class="col-md-4">
-							<div class="">
-								<div class="card">
-									<div class="card-header d-flex justify-content-center">
-										<h2 class="card-title mtittle"> Crear Grupos</h2>
-									</div>
-									<div class="card-body pb-0 ">
-										<form>
-											<div class="form-group">
-												<label for="exampleFormControlSelect1">Materia</label>
-												<select class="form-control" id="exampleFormControlSelect1">
-													<option>Seminario de Investigación ll</option>
-													<option>Análisis y Diseño</option>
-													<option>Administración de proyectos informaticos</option>
-													<option>Inteligencia Artificial</option>
-													<option>Seminario de Investigación lll</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="exampleFormControlSelect1">Docente</label>
-												<select class="form-control" id="exampleFormControlSelect1">
-													<option>Alvaro Salamanca Landinez</option>
-													<option>Judith del Pilar Rodrigez Tenjo</option>
-													<option>Maria del Pilar Rojas Puentes</option>
-													<option>Eduard Gilberto Puerto Cuadros</option>
-													<option>Alvaro Salamanca Landinez</option>
-												</select>
-											</div>
-											<div class="form-group">
-												<label for="exampleFormControlSelect1">Grupo</label>
-												<select class="form-control" id="exampleFormControlSelect1">
-													<option>A</option>
-													<option>B</option>
-													<option>C</option>
-													<option>D</option>
-													<option>E</option>
-												</select>
-											</div>
-											<div class="form-group d-flex justify-content-center align-items-center">
-												<button class="btn btn-danger">Crear</button>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Fin Crear Grupos-->
+						<!-- Find Tabla Docentes -->
 					</div>
 				</div>
 			</div>
-
 			<footer class="footer">
 				<div class="container-fluid">
 					<nav class="pull-left">
@@ -485,21 +464,22 @@
 			</footer>
 		</div>
 	</div>
+
 	<!--   Core JS Files   -->
-	<script src="../../assets/js/core/jquery.3.2.1.min.js"></script>
-	<script src="../../assets/js/core/popper.min.js"></script>
-	<script src="../../assets/js/core/bootstrap.min.js"></script>
+	<script src="../../../assets/js/core/jquery.3.2.1.min.js"></script>
+	<script src="../../../assets/js/core/popper.min.js"></script>
+	<script src="../../../assets/js/core/bootstrap.min.js"></script>
 	<!-- jQuery UI -->
-	<script src="../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
-	<script src="../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	<script src="../../../assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="../../../assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
 	<!-- jQuery Scrollbar -->
-	<script src="../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<script src="../../../assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
 	<!-- Datatables -->
-	<script src="../../assets/js/plugin/datatables/datatables.min.js"></script>
+	<script src="../../../assets/js/plugin/datatables/datatables.min.js"></script>
 	<!-- Atlantis JS -->
-	<script src="../../assets/js/atlantis.min.js"></script>
+	<script src="../../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
-	<script src="../../assets/js/setting-demo2.js"></script>
+	<script src="../../../assets/js/setting-demo2.js"></script>
 	<!-- Filtros Tablas JS -->
 	<script>
 		$(document).ready(function () {

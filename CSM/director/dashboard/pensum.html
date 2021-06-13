@@ -151,9 +151,9 @@
 									</li>
 									<li>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="../perfil/profile.html">My Profile</a>
+										<a class="dropdown-item" href="perfil/profile.html">My Profile</a>
 										<div class="dropdown-divider"></div>
-										<a class="dropdown-item" href="../perfil/edit-profile.html">Account Setting</a>
+										<a class="dropdown-item" href="perfil/edit-profile.html">Account Setting</a>
 										<div class="dropdown-divider"></div>
 										<a class="dropdown-item" href="../../sign-in/singin.html">Logout</a>
 									</li>
@@ -187,12 +187,12 @@
 								<div class="collapse in" id="collapseExample">
 									<ul class="nav">
 										<li>
-											<a href="../perfil/profile.html">
+											<a href="perfil/profile.html">
 												<span class="link-collapse">My Profile</span>
 											</a>
 										</li>
 										<li>
-											<a href="../perfil/edit-profile.html">
+											<a href="perfil/edit-profile.html">
 												<span class="link-collapse">Account Setting</span>
 											</a>
 										</li>
@@ -207,7 +207,7 @@
 						</div>
 						<ul class="nav nav-primary">
 							<li class="nav-item">
-								<a href="../dashboard.html" class="collapsed" aria-expanded="false">
+								<a href="dashboard.html" class="collapsed" aria-expanded="false">
 									<i class="fas fa-home"></i>
 									<p>Dashboard</p>
 								</a>
@@ -218,32 +218,32 @@
 								</span>
 								<h4 class="text-section">Components</h4>
 							</li>
-							<li class="nav-item">
-								<a href="../pensum.html">
+							<li class="nav-item active">
+								<a href="pensum.html">
 									<i class="fas fa-layer-group"></i>
 									<p>Pensum</p>
 								</a>
 							</li>
-							<li class="nav-item active submenu">
-								<a data-toggle="collapse" href="#tables">
-									<i class="fas fa-table"></i>
+							<li class="nav-item">
+								<a data-toggle="collapse" href="#sidebarLayouts">
+									<i class="fas fa-th-list"></i>
 									<p>Microcurriculo</p>
 									<span class="caret"></span>
 								</a>
-								<div class="collapse show" id="tables">
+								<div class="collapse" id="sidebarLayouts">
 									<ul class="nav nav-collapse">
 										<li>
-											<a href="registrar-microcurriculo.html">
+											<a href="microcurriculo/registrar-microcurriculo.html">
 												<span class="sub-item">Registrar Microcurriculo</span>
 											</a>
 										</li>
 										<li>
-											<a href="solicitudes-microcurriculo.html">
+											<a href="microcurriculo/solicitudes-microcurriculo.html">
 												<span class="sub-item">Solicitudes Microcurriculo</span>
 											</a>
 										</li>
-										<li class="active">
-											<a href="#">
+										<li>
+											<a href="microcurriculo/consultar-microcurriculo.html">
 												<span class="sub-item">Consultar Microcurriculo</span>
 											</a>
 										</li>
@@ -251,19 +251,19 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a href="../seguimiento.html">
+								<a href="seguimiento.html">
 									<i class="fas fa-chart-bar"></i>
 									<p>Seguimiento</p>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a href="../grupos.html">
+								<a href="grupos.html">
 									<i class="fas fa-table"></i>
 									<p>Grupos</p>
 								</a>
 							</li>
 							<li class="nav-item">
-								<a href="../docentes.html">
+								<a href="docentes.html">
 									<i class="fas fa-user-friends"></i>
 									<p>Docentes</p>
 								</a>
@@ -277,18 +277,22 @@
 					</div>
 				</div>
 			</div>
+
 		</div>
 		<!-- End Sidebar -->
+
 
 		<div class="main-panel">
 			<div class="content">
 				<div class="page-inner">
 					<div class="page-header">
-						<h4 class="page-title">Consultar Microcurriculo</h4>
+						<div>
+							<h4 class="page-title">Pensum</h4>
+						</div>
 						<div class="ml-md-auto">
 							<ul class="breadcrumbs">
 								<li class="nav-home">
-									<a href="../dashboard.html">
+									<a href="dashboard.html">
 										<i class="flaticon-home"></i>
 									</a>
 								</li>
@@ -296,84 +300,125 @@
 									<i class="flaticon-right-arrow"></i>
 								</li>
 								<li class="nav-item">
-									<a href="#">Microcurriculo</a>
-								</li>
-								<li class="separator">
-									<i class="flaticon-right-arrow"></i>
-								</li>
-								<li class="nav-item">
-									<a href="#">Consultar</a>
+									<a href="#">Pensum</a>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="row">
-						<!-- Tabla Consultar Microcurriculos -->
+
+						<!-- Pensum Actual-->
 						<div class="col-md-12">
 							<div class="card">
-								<div class="card-header text-center">
-									<h4 class="card-title">Listado Microcurriculos</h4>
+								<div class="card-header">
+									<div class="d-flex justify-content-center">
+										<h4 class="card-title">Pensum 115-3</h4>
+									</div>
+								</div>
+								<div class="card-body d-flex align-items-end">
+									<iframe class="materialboxed" id="contenedor" src="pensum/ver-pensum.html"
+										title="visualizar pensum" scrolling="no" frameborder="0" height="850px"
+										width="100%" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+						<!-- Fin Pensum Actual -->
+
+						<!-- Card Pensum -->
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header row">
+									<div class="col d-flex justify-content-center align-items-center">
+										<h4 class="card-title  ">Listado Pensum</h4>
+									</div>
+									<button class="btn btn-primary btn-round ml-auto" data-toggle="modal"
+										data-target="#addRowModal">
+										<i class="fa fa-plus"></i>
+										Cargar Pensum
+									</button>
 								</div>
 								<div class="card-body">
+									<!-- Modal -->
+									<div class="modal fade" id="addRowModal" tabindex="-1" role="dialog"
+										aria-hidden="true">
+										<div class="modal-dialog" role="document">
+											<div class="modal-content">
+												<div class="modal-header no-bd">
+													<h5 class="modal-title">Cargar Pensum</h5>
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													</button>
+												</div>
+												<div class="modal-body">
+													<p class="small">Importe el Archivo en Formato PDF</p>
+													<form>
+														<div class="row">
+															<div class="col-12 form-group">
+																<input type="file" class="form-control-file"
+																	id="exampleFormControlFile1">
+															</div>
+														</div>
+													</form>
+												</div>
+												<div class="modal-footer no-bd">
+													<button type="button" id="addRowButton"
+														class="btn btn-primary">Agregar</button>
+													<button type="button" class="btn btn-danger"
+														data-dismiss="modal">Cerrar</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- Fin Modal -->
+
+									<!-- Tabla Pensum -->
 									<div class="table-responsive">
 										<table id="basic-datatables"
 											class="display table table-striped table-hover text-center">
 											<thead>
 												<tr>
-													<th>Pensum</th>
-													<th>Código Materia</th>
-													<th>Nombre Materia</th>
+													<th>Código</th>
+													<th>Periodo</th>
 													<th>Créditos</th>
-													<th>Semestre</th>
+													<th>Cant Materias</th>
+													<th>Fecha Inicio</th>
 													<th>Action</th>
 												</tr>
 											</thead>
 											<tfoot>
 												<tr>
-													<th>Pensum</th>
-													<th>Código Materia</th>
-													<th>Nombre Materia</th>
+													<th>Código</th>
+													<th>Periodo</th>
 													<th>Créditos</th>
-													<th>Semestre</th>
+													<th>Cant Materias</th>
+													<th>Fecha Inicio</th>
 													<th>Action</th>
 												</tr>
 											</tfoot>
 											<tbody>
 												<tr>
 													<td>115-3</td>
-													<td>1155704</td>
-													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
-													<td>3</td>
-													<td>7</td>
+													<td>2021</td>
+													<td>164</td>
+													<td>46</td>
+													<td>2021/01/01</td>
 													<td>
 														<div class="form-button-action">
-															<a href="ver-microcurriculo.html">
-																<button id="pensum" type="button" data-toggle="tooltip"
-																	title="" class="btn btn-link btn-dark"
-																	data-original-title="See" style="color: black;">
-																	<i class="fas fa-search"></i>
-																</button>
-															</a>
 															<button type="button" data-toggle="tooltip" title=""
-																class="btn btn-link btn-dark"
-																data-original-title="Export PDF" style="color: black;">
-																<i class="fas fa-file-pdf"></i>
-															</button>
-														</div>
-													</td>
-												</tr>
-												<tr>
-													<td>115-3</td>
-													<td>1155705</td>
-													<td>ANALISIS Y DISEÑO DE SISTEMAS</td>
-													<td>4</td>
-													<td>7</td>
-													<td>
-														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
 																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
 															</button>
 															<button type="button" data-toggle="tooltip" title=""
 																class="btn btn-link btn-dark"
@@ -384,17 +429,27 @@
 													</td>
 												</tr>
 												<tr>
-													<td>115-3</td>
-													<td>1155706</td>
-													<td>SEMINARIO DE INVESTIGACION III</td>
-													<td>2</td>
-													<td>7</td>
+													<td>115-2</td>
+													<td>2020</td>
+													<td>163</td>
+													<td>48</td>
+													<td>2020/01/01</td>
 													<td>
 														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
 																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
 															</button>
 															<button type="button" data-toggle="tooltip" title=""
 																class="btn btn-link btn-dark"
@@ -405,17 +460,27 @@
 													</td>
 												</tr>
 												<tr>
-													<td>115-3</td>
-													<td>1155708</td>
-													<td>ADMINISTRACION DE PROYECTOS INFORMATICOS</td>
-													<td>3</td>
-													<td>7</td>
+													<td>115-1</td>
+													<td>2019</td>
+													<td>162</td>
+													<td>50</td>
+													<td>2019/01/01</td>
 													<td>
 														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
 																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
 															</button>
 															<button type="button" data-toggle="tooltip" title=""
 																class="btn btn-link btn-dark"
@@ -426,17 +491,27 @@
 													</td>
 												</tr>
 												<tr>
-													<td>115-3</td>
-													<td>1155704</td>
-													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
-													<td>3</td>
-													<td>6</td>
+													<td>151</td>
+													<td>2018</td>
+													<td>160</td>
+													<td>43</td>
+													<td>2018/01/01</td>
 													<td>
 														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
 																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
 															</button>
 															<button type="button" data-toggle="tooltip" title=""
 																class="btn btn-link btn-dark"
@@ -447,17 +522,58 @@
 													</td>
 												</tr>
 												<tr>
-													<td>115-3</td>
-													<td>1155704</td>
-													<td>TEORIA GENERAL DE LAS COMUNICACIONES</td>
-													<td>3</td>
-													<td>7</td>
+													<td>152</td>
+													<td>2017</td>
+													<td>165</td>
+													<td>45</td>
+													<td>2017/01/01</td>
 													<td>
 														<div class="form-button-action">
-															<button id="pensum" type="button" data-toggle="tooltip"
-																title="" class="btn btn-link btn-dark"
-																data-original-title="See" style="color: black;">
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
 																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark"
+																data-original-title="Export PDF" style="color: black;">
+																<i class="fas fa-file-pdf"></i>
+															</button>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<td>153</td>
+													<td>2017</td>
+													<td>165</td>
+													<td>46</td>
+													<td>2017/01/01</td>
+													<td>
+														<div class="form-button-action">
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-dark" data-original-title="See"
+																style="color: black;">
+																<i class="fas fa-search"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-primary btn-lg"
+																data-original-title="Edit Task">
+																<i class="fa fa-edit"></i>
+															</button>
+															<button type="button" data-toggle="tooltip" title=""
+																class="btn btn-link btn-danger"
+																data-original-title="Remove">
+																<i class="fa fa-times"></i>
 															</button>
 															<button type="button" data-toggle="tooltip" title=""
 																class="btn btn-link btn-dark"
@@ -470,10 +586,11 @@
 											</tbody>
 										</table>
 									</div>
+									<!-- Fin Tabla Pensum -->
 								</div>
 							</div>
 						</div>
-						<!-- Fin Tabla Consultar Microcurriculos -->
+						<!-- Fin Card Pensum -->
 					</div>
 				</div>
 			</div>
@@ -521,38 +638,17 @@
 	<script src="../../../assets/js/atlantis.min.js"></script>
 	<!-- Atlantis DEMO methods, don't include it in your project! -->
 	<script src="../../../assets/js/setting-demo2.js"></script>
-	<script>
-		$('#displayNotif').on('click', function () {
-			var placementFrom = $('#notify_placement_from option:selected').val();
-			var placementAlign = $('#notify_placement_align option:selected').val();
-			var state = $('#notify_state option:selected').val();
-			var style = $('#notify_style option:selected').val();
-			var content = {};
-
-			content.message = 'Turning standard Bootstrap alerts into "notify" like notifications';
-			content.title = 'Bootstrap notify';
-			if (style == "withicon") {
-				content.icon = 'fa fa-bell';
-			} else {
-				content.icon = 'none';
-			}
-			content.url = 'index.html';
-			content.target = '_blank';
-
-			$.notify(content, {
-				type: state,
-				placement: {
-					from: placementFrom,
-					align: placementAlign
-				},
-				time: 1000,
-			});
-		});
-	</script>
+	<!-- Filtros Tablas JS -->
 	<script>
 		// Basic
 		$('#basic-datatables').DataTable({
 			"pageLength": 5,
+		});
+
+		// Add Row
+		$('#addRowButton').click(function () {
+			$('#addRowModal').modal('hide');
+
 		});
 	</script>
 </body>
