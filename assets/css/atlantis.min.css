@@ -16110,3 +16110,6 @@ body[data-background-color="dark"] .board {
   position: relative;
   top: 20em;
 }
+.anonstyle{
+  text-decoration: none !important;
+}

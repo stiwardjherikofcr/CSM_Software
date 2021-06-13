@@ -46,3 +46,6 @@ body {
 .gbcolor{
   background-color: rgba(242, 242, 242, 0.50);
 }
+.singin::placeholder{
+  text-align: center !important;
+}
