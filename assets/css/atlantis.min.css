@@ -16106,3 +16106,7 @@ body[data-background-color="dark"] .board {
   ) !important;
   background: linear-gradient(-45deg, #e80a15, #a81f2b) !important;
 }
+.logoUFPS{
+  position: relative;
+  top: 20em;
+}
