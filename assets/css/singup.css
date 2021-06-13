@@ -7,14 +7,7 @@ body {
     background-size: cover;
   }
   .logoUFPS {
-    width: 25vw;
-    position: relative;
-  }
-  .logoUFPS img {
-    width: 100%;
-    position: absolute;
-    top: 23em;
-    left: 11em;
+    width: 65%;
   }
   .iniciarsession{
     width: 20vw;
@@ -33,8 +26,8 @@ body {
     border-radius: 50px !important;
   }
   .cuerpologin{
-    width: 100vw !important;
-    height: 100vh !important;
+    width: 99vw !important;
+    height: 99vh !important;
   }
   .prlogin{
     position: relative;
@@ -49,3 +42,11 @@ body {
   .singin::placeholder{
     text-align: center !important;
   }
+  .vh-20{
+    height: 20vh;
+  }
+  .t-white{
+    color: white;
+    font-size: 4em !important;
+  }
+  
