@@ -29,12 +29,8 @@ body {
     width: 99vw !important;
     height: 99vh !important;
   }
-  .prlogin{
-    position: relative;
-    top: -8em;
-  }
   .plogin{
-    padding: 4em;
+    padding: 1em 2em;
   }
   .gbcolor{
     background-color: rgba(242, 242, 242, 0.50);
@@ -49,4 +45,6 @@ body {
     color: white;
     font-size: 4em !important;
   }
-  
+  .account{
+    width: 15%;
+  }

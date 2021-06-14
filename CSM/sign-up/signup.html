@@ -9,7 +9,7 @@
     <link rel="icon" href="../../../assets/img/icon.ico" type="image/x-icon" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../../assets/css/singup.css">
-    
+
     <!-- CSS Files -->
     <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../assets/css/checkradio.css">
@@ -31,46 +31,69 @@
                 <div class="offset-md-10 col-2">
                     <img class="logoUFPS" src="../../assets/img/Logo-nuevo-vertical.png" alt="logo de la UFPS">
                 </div>
-               
+
             </div>
         </div>
         <div class=" row d-flex justify-content-center">
-            <form class=" ">
-                <div class=" fbr plogin prlogin gbcolor">
-                    <div class="mb-3 w-100 d-flex justify-content-center">
-                        <img class="w-50" src="../../assets/img/profile.svg" alt="">
+            <form class="w-75">
+                <div class=" fbr plogin  gbcolor">
+                    <div class="mb-3 w-100 d-flex justify-content-center align-items-center">
+                        <img class="account" src="../../assets/img/profile.svg" alt="">
                     </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control brlogin singin" placeholder="Documento"
+                    <div class="mb-3 row w-100">
+                        <h3 class="col-2">Nombres</h3>
+                        <input type="text" class="col form-control  singin" placeholder="Nombres" id="">
+                        <h3 class="col-2">Apellidos</h3>
+                        <input type="text" class="col form-control  singin" placeholder="Apellidos" id="">
+                    </div>
+                    <div class="mb-3 row w-100">
+                        <h3 class="col-2">Codigo</h3>
+                        <input type="text" class="col form-control  singin" placeholder="Codigo" id="">
+                        <h3 class="col-2">Correo</h3>
+                        <input type="text" class="col form-control  singin" placeholder="Correo" id="">
+                    </div>
+                    <div class="mb-3 row w-100">
+                        <h3 class="col-2">Contraseña</h3>
+                        <input type="text" class="col form-control   singin" placeholder="Contraseña" id="">
+                        <h3 class="col-2">Confirmar Contraseña</h3>
+                        <input type="text" class="col form-control  singin" placeholder="Confirmar Contraseña"
                             id="">
                     </div>
-                    <div class="mb-3">
-                        <input type="text" class="form-control brlogin singin" placeholder="Documento"
-                            id="">
+                    <div class="mb-3 row w-100">
+                        <h3 class="col-2">Facultad</h3>
+                        <select class=" col form-control" id="formGroupDefaultSelect">
+                            <option selected>En curso</option>
+                            <option>Aprovado</option>
+                            <option>Rechazado</option>
+                        </select>
+                        <h3 class="col-2">Departamento</h3>
+                        <select class=" col form-control" id="formGroupDefaultSelect">
+                            <option selected>En curso</option>
+                            <option>Aprovado</option>
+                            <option>Rechazado</option>
+                        </select>
                     </div>
-                    <div class="mb-3">
-                        <input type="password" class="form-control brlogin singin" placeholder="Contraseña"
-                            id="">
-                    </div>
-                    <div class="mb-3  d-flex justify-content-around">
-                        <div>
-                            <label for="opt1" class="radio">
-                                <input type="radio" name="rdo" id="opt1" class="hidden" />
-                                <span class="label"></span>Director de Programa
-                            </label>
+                    <div class="mb-3 row w-100">
+                        <h3 class="col-2">Facultad</h3>
+                        <select class=" col form-control" id="formGroupDefaultSelect">
+                            <option selected>En curso</option>
+                            <option>Aprovado</option>
+                            <option>Rechazado</option>
+                        </select>
 
-                            <label for="opt2" class="radio">
-                                <input type="radio" name="rdo" id="opt2" class="hidden" />
-                                <span class="label"></span>Docente
-                            </label>
-                        </div>
                     </div>
                     <!--botones-->
                     <div class="w-100 d-flex justify-content-center ">
-                        <a class="btn btn-danger mb-2 w-100 brlogin" href="javascript:href()">Iniciar Sesion</a>
-                    </div>
-                    <div class="w-100 d-flex justify-content-center ">
-                        <a class="btn btn-danger mb-2 w-100 brlogin" href="../sign-up/signup.html">Registrarse</a>
+                        <div class="w-25">
+                            <a class="btn btn-danger mb-2 w-100 brlogin mr-2" href="../sign-in/singin.html">Iniciar
+                                Sesion</a>
+                        </div>
+                        <div class="w-25">
+                            <a class="btn btn-danger mb-2 w-100 brlogin ml-2"
+                                href="../sign-up/signup.html">Registrarse</a>
+                        </div>
+
+
                     </div>
                     <!--botones-->
                 </div>
